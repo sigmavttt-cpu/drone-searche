@@ -1,0 +1,848 @@
+{
+  "included_new_papers": [
+    {
+      "id": "https://openalex.org/W4406356435",
+      "title": "BLM-Chain: AI-Driven Blockchain for UAV Threat Resistance in IoBT",
+      "authors": [
+        "Mohtasin Golam",
+        "Md Mahinur Alam",
+        "Dong‐Seong Kim",
+        "Jae‐Min Lee"
+      ],
+      "year": 2024,
+      "venue": "",
+      "doi": "https://doi.org/10.1109/ictc62082.2024.10827764",
+      "pdf_url": null,
+      "abstract": "The rapid expansion of the Internet of Battlefield Things (IoBT) has introduced significant vulnerabilities, particularly concerning unmanned aerial vehicles (UAVs) that are increasingly targeted by sophisticated cyber threats. To address these challenges, this paper proposes the BLM-Chain framework. This novel approach integrates blockchain technology with large language models (LLMs) to enhance UAV threat resistance within IoBT networks. The framework leverages blockchain's immutable and decen",
+      "source": "OpenAlex"
+    },
+    {
+      "id": "https://openalex.org/W7117867097",
+      "title": "PAVE-MAVLink: Formal Verification of MAVLink 2 for Secure UAV Communications",
+      "authors": [
+        "Tom Wray",
+        "Ying Wang"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "https://doi.org/10.1109/milcom64451.2025.11310743",
+      "pdf_url": null,
+      "abstract": "This work presents a multi-stage, Large Language Model(LLM)-accelerated framework for formal verification and security validation of UAV communication protocols, focusing on MAVLink 2. We introduce a prompt-driven approach to automatically generate symbolic models for nuXmv and ProVerif, allowing rapid identification and mitigation of protocol vulnerabilities. Experimental results demonstrate that, without cryptographic protections, MAVLink 2 is susceptible to critical command injection attacks,",
+      "source": "OpenAlex"
+    },
+    {
+      "id": "https://openalex.org/W7117891245",
+      "title": "PAVE++ Demo: Cross-Layer Formal Verification and OTA Validation for UAV Communications",
+      "authors": [
+        "Tom Wray",
+        "Ying Wang"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "https://doi.org/10.1109/milcom64451.2025.11310334",
+      "pdf_url": null,
+      "abstract": "This demonstration presents an interactive showcase of the Prompt Aided Formal Verification (PAVE) framework applied to MAVLink 2, emphasizing practical and visual verification processes. Attendees will experience real-time demonstrations including: automatic translation of natural language protocol specifications into symbolic verification models using Large Language Models (LLMs); visual state-machine verification via nuXmv and ProVerif; simulated cyber-attacks on the Damn Vulnerable Drone (DV",
+      "source": "OpenAlex"
+    },
+    {
+      "id": "http://arxiv.org/abs/2512.06747v1",
+      "title": "PrivLLMSwarm: Privacy-Preserving LLM-Driven UAV Swarms for Secure IoT Surveillance",
+      "authors": [
+        "Jifar Wakuma Ayana",
+        "Huang Qiming"
+      ],
+      "year": 2025,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2512.06747v1",
+      "pdf_url": "https://arxiv.org/pdf/2512.06747v1",
+      "abstract": "Large Language Models (LLMs) are emerging as powerful enablers for autonomous reasoning and natural-language coordination in unmanned aerial vehicle (UAV) swarms operating within Internet of Things (IoT) environments. However, existing LLM-driven UAV systems process sensitive operational data in plaintext, exposing them to privacy and security risks. This work introduces PrivLLMSwarm, a privacy-preserving framework that performs secure LLM inference for UAV swarm coordination through Secure Mult",
+      "source": "arXiv"
+    },
+    {
+      "id": "http://arxiv.org/abs/2508.12597v2",
+      "title": "UAV Individual Identification via Distilled RF Fingerprints-Based LLM in ISAC Networks",
+      "authors": [
+        "Haolin Zheng",
+        "Ning Gao",
+        "Donghong Cai",
+        "Shi Jin"
+      ],
+      "year": 2025,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2508.12597v2",
+      "pdf_url": "https://arxiv.org/pdf/2508.12597v2",
+      "abstract": "Unmanned aerial vehicle (UAV) individual (ID) identification is a critical security surveillance strategy in low-altitude integrated sensing and communication (ISAC) networks. In this paper, we propose a novel dynamic knowledge distillation (KD)-enabled wireless radio frequency fingerprint large language model (RFF-LLM) framework for UAV ID identification. First, we propose an RFF-LLM framework based on the modified GPT-2 model to improve the identification accuracy in complex outdoor environmen",
+      "source": "arXiv"
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.09756v1",
+      "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+      "authors": [
+        "Yousef Emami",
+        "Rahim Taheri",
+        "Mohammadhossein Homaei",
+        "Muhammad Atif Ur Rehman"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2607.09756v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09756v1",
+      "abstract": "Uncrewed Aerial Vehicle (UAV) swarms have significant potential for applications such as Search and Rescue (SAR) and environmental monitoring, but their real-world deployment is limited by a lack of situational awareness, intermittent connectivity, and significant cybersecurity risks. Agentic Artificial Intelligence (AI) represents a shift from standalone Large Language Model (LLM) toward closed-loop cognitive architectures that integrate perception, memory, reasoning/planning, and action to ena",
+      "source": "arXiv"
+    }
+  ],
+  "excluded_new_papers": [
+    {
+      "id": "https://openalex.org/W4385900995",
+      "title": "A Comprehensive Review of Recent Research Trends on Unmanned Aerial Vehicles (UAVs)",
+      "authors": [
+        "Khaled Telli",
+        "Okba Kraa",
+        "Yassine Himeur",
+        "Abdelmalik Ouamane"
+      ],
+      "year": 2023,
+      "venue": "Systems",
+      "doi": "https://doi.org/10.3390/systems11080400",
+      "pdf_url": "https://www.mdpi.com/2079-8954/11/8/400/pdf?version=1691051996",
+      "abstract": "The growing interest in unmanned aerial vehicles (UAVs) from both the scientific and industrial sectors has attracted a wave of new researchers and substantial investments in this expansive field. However, due to the wide range of topics and subdomains within UAV research, newcomers may find themselves overwhelmed by the numerous options available. It is therefore crucial for those involved in UAV research to recognize its interdisciplinary nature and its connections with other disciplines. This",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4413167306",
+      "title": "Cybersecurity Challenges and Solutions in Unmanned Aerial Vehicles (UAVs)",
+      "authors": [
+        "Roya Morshedi",
+        "S. Mojtaba Matinkhah"
+      ],
+      "year": 2025,
+      "venue": "Journal of Field Robotics",
+      "doi": "https://doi.org/10.1002/rob.70040",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.70040",
+      "abstract": "ABSTRACT Unmanned aerial vehicles (UAVs) have become indispensable assets across military, commercial, and civil domains due to their operational flexibility, cost‐efficiency, and real‐time sensing capabilities. However, the increasing integration of UAVs into critical infrastructure, combined with their reliance on wireless communications, Global Positioning System, and embedded control systems, has significantly expanded their cybersecurity attack surface. Despite growing research efforts, a c",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E1] Relies strictly on classical ML/DL without LLM or Foundation Model architecture"
+    },
+    {
+      "id": "https://openalex.org/W4401357555",
+      "title": "Enhancing Autonomous System Security and Resilience With Generative AI: A Comprehensive Survey",
+      "authors": [
+        "Martin Andreoni Lopez",
+        "Willian T. Lunardi",
+        "George Lawton",
+        "Shreekant Thakkar"
+      ],
+      "year": 2024,
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/access.2024.3439363",
+      "pdf_url": "https://doi.org/10.1109/access.2024.3439363",
+      "abstract": "This survey explores the transformative role of Generative Artificial Intelligence (GenAI) in enhancing the trustworthiness, reliability, and security of autonomous systems such as Unmanned Aerial Vehicles (UAVs), self-driving cars, and robotic arms. As edge robots become increasingly integrated into daily life and critical infrastructure, the complexity and connectivity of these systems introduce formidable challenges in ensuring security, resilience, and safety. GenAI advances from mere data i",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E3] General survey or systematic review paper"
+    },
+    {
+      "id": "https://openalex.org/W4402512852",
+      "title": "Large Language Models (LLMs) for Cybersecurity: A Systematic Review",
+      "authors": [
+        "Yazi Gholami"
+      ],
+      "year": 2024,
+      "venue": "World Journal of Advanced Engineering Technology and Sciences",
+      "doi": "https://doi.org/10.30574/wjaets.2024.13.1.0395",
+      "pdf_url": "https://wjaets.com/sites/default/files/WJAETS-2024-0395.pdf",
+      "abstract": "The rapid evolution of artificial intelligence (AI), particularly Large Language Models (LLMs) such as GPT-3 and BERT, has transformed various domains by enabling sophisticated natural language processing (NLP) tasks. In cybersecurity, the integration of LLMs presents promising new capabilities to address the growing complexity and scale of cyber threats. This paper provides a comprehensive review of the current research on the application of LLMs in cybersecurity. Leveraging a systematic litera",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4410857897",
+      "title": "Transformers and large language models for efficient intrusion detection systems: A comprehensive survey",
+      "authors": [
+        "Hamza Kheddar"
+      ],
+      "year": 2025,
+      "venue": "Information Fusion",
+      "doi": "https://doi.org/10.1016/j.inffus.2025.103347",
+      "pdf_url": "https://arxiv.org/pdf/2408.07583",
+      "abstract": "",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4410140821",
+      "title": "Generative AI revolution in cybersecurity: a comprehensive review of threat intelligence and operations",
+      "authors": [
+        "Mueen Uddin",
+        "Muhammad Saad Irshad",
+        "Irfan Ali Kandhro",
+        "Fuhid Alanazi"
+      ],
+      "year": 2025,
+      "venue": "Artificial Intelligence Review",
+      "doi": "https://doi.org/10.1007/s10462-025-11219-5",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-025-11219-5.pdf",
+      "abstract": "Abstract Cyber threats are increasingly frequent in today’s world, posing challenges for organizations and individuals to protect their data from cybercriminals. On the other hand, Generative Artificial Intelligence (GAI) technology offers an efficient way to automatically address these issues with the help of AI models and algorithms. It can work on more critical security aspects where human intervention is required and handle everyday threat situations autonomously. This research paper explore",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4414404571",
+      "title": "Toward Edge General Intelligence With Multiple-Large Language Model (Multi-LLM): Architecture, Trust, and Orchestration",
+      "authors": [
+        "Haoxiang Luo",
+        "Yinqiu Liu",
+        "Ruichen Zhang",
+        "Jiacheng Wang"
+      ],
+      "year": 2025,
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "doi": "https://doi.org/10.1109/tccn.2025.3612760",
+      "pdf_url": "https://pure.qub.ac.uk/en/publications/a3586b62-09da-4793-be5e-1babbac38073",
+      "abstract": "Edge computing enables real-time data processing closer to its source, thus improving the latency and performance of edge-enabled AI applications. However, predictive AI models often fall short when dealing with complex, dynamic tasks that require advanced reasoning and multimodal data processing. This survey explores the integration of multi-LLMs (Large Language Models) to address these challenges in edge computing, where multiple specialized LLMs collaborate to enhance task performance and ada",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4319796192",
+      "title": "Drone Detection Using YOLOv5",
+      "authors": [
+        "Burchan Aydin",
+        "Subroto Singha"
+      ],
+      "year": 2023,
+      "venue": "Eng—Advances in Engineering",
+      "doi": "https://doi.org/10.3390/eng4010025",
+      "pdf_url": "https://www.mdpi.com/2673-4117/4/1/25/pdf?version=1675235409",
+      "abstract": "The rapidly increasing number of drones in the national airspace, including those for recreational and commercial applications, has raised concerns regarding misuse. Autonomous drone detection systems offer a probable solution to overcoming the issue of potential drone misuse, such as drug smuggling, violating people’s privacy, etc. Detecting drones can be difficult, due to similar objects in the sky, such as airplanes and birds. In addition, automated drone detection systems need to be trained ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4387972705",
+      "title": "IoT empowered smart cybersecurity framework for intrusion detection in internet of drones",
+      "authors": [
+        "Syeda Nazia Ashraf",
+        "Selvakumar Manickam",
+        "Syed Saood Zia",
+        "Abdul Ahad Abro"
+      ],
+      "year": 2023,
+      "venue": "Scientific Reports",
+      "doi": "https://doi.org/10.1038/s41598-023-45065-8",
+      "pdf_url": "https://www.nature.com/articles/s41598-023-45065-8.pdf",
+      "abstract": "The emergence of drone-based innovative cyber security solutions integrated with the Internet of Things (IoT) has revolutionized navigational technologies with robust data communication services across multiple platforms. This advancement leverages machine learning and deep learning methods for future progress. In recent years, there has been a significant increase in the utilization of IoT-enabled drone data management technology. Industries ranging from industrial applications to agricultural ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E1] Relies strictly on classical ML/DL without LLM or Foundation Model architecture"
+    },
+    {
+      "id": "https://openalex.org/W4320008781",
+      "title": "Detection of Real-Time Malicious Intrusions and Attacks in IoT Empowered Cybersecurity Infrastructures",
+      "authors": [
+        "Irfan Ali Kandhro",
+        "Sultan Munadi Alanazi",
+        "Fayyaz Ali",
+        "Asadullah Kehar"
+      ],
+      "year": 2023,
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/access.2023.3238664",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/10005208/10023499.pdf",
+      "abstract": "Computer viruses, malicious, and other hostile attacks can affect a computer network. Intrusion detection is a key component of network security as an active defence technology. Traditional intrusion detection systems struggle with issues like poor accuracy, ineffective detection, a high percentage of false positives, and an inability to handle new types of intrusions. To address these issues, we propose a deep learning-based novel method to detect cybersecurity vulnerabilities and breaches in c",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4400266772",
+      "title": "Deep Learning in the Fast Lane: A Survey on Advanced Intrusion Detection Systems for Intelligent Vehicle Networks",
+      "authors": [
+        "Mohammed Almehdhar",
+        "Abdullatif Mohammed Albaseer",
+        "Muhammad Asif Khan",
+        "Mohamed M. Abdallah"
+      ],
+      "year": 2024,
+      "venue": "IEEE Open Journal of Vehicular Technology",
+      "doi": "https://doi.org/10.1109/ojvt.2024.3422253",
+      "pdf_url": "https://doi.org/10.1109/ojvt.2024.3422253",
+      "abstract": "The rapid evolution of modern automobiles into intelligent and interconnected entities presents new challenges in cybersecurity, particularly in Intrusion Detection Systems (IDS) for In-Vehicle Networks (IVNs). This survey paper offers an in-depth examination of advanced machine learning (ML) and deep learning (DL) approaches employed in developing sophisticated IDS for safeguarding IVNs against potential cyber-attacks. Specifically, we focus on the Controller Area Network (CAN) protocol, which ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4388626146",
+      "title": "DTL-IDS: An optimized Intrusion Detection Framework using Deep Transfer Learning and Genetic Algorithm",
+      "authors": [
+        "Shahid Latif",
+        "Wadii Boulila",
+        "Anis Koubâa",
+        "Zhuo Zou"
+      ],
+      "year": 2023,
+      "venue": "Journal of Network and Computer Applications",
+      "doi": "https://doi.org/10.1016/j.jnca.2023.103784",
+      "pdf_url": "https://doi.org/10.1016/j.jnca.2023.103784",
+      "abstract": "In the dynamic field of the Industrial Internet of Things (IIoT), the networks are increasingly vulnerable to a diverse range of cyberattacks. This vulnerability necessitates the development of advanced intrusion detection systems (IDSs). Addressing this need, our research contributes to the existing cybersecurity literature by introducing an optimized Intrusion Detection System based on Deep Transfer Learning (DTL), specifically tailored for heterogeneous IIoT networks. Our framework employs a ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4387662349",
+      "title": "TNN-IDS: Transformer neural network-based intrusion detection system for MQTT-enabled IoT Networks",
+      "authors": [
+        "Safi Ullah",
+        "Jawad Elsayed Ahmad",
+        "Muazzam Ali Khan",
+        "Mohammed S. Alshehri"
+      ],
+      "year": 2023,
+      "venue": "Computer Networks",
+      "doi": "https://doi.org/10.1016/j.comnet.2023.110072",
+      "pdf_url": "https://doi.org/10.1016/j.comnet.2023.110072",
+      "abstract": "The Internet of Things (IoT) is a global network that connects a large number of smart devices. MQTT is a de facto standard, lightweight, and reliable protocol for machine-to-machine communication, widely adopted in IoT networks. Various smart devices within these networks are employed to handle sensitive information. However, the scale and openness of IoT networks make them highly vulnerable to security breaches and attacks, such as eavesdropping, weak authentication, and malicious payloads. He",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4401485877",
+      "title": "A comprehensive survey of deep learning-based lightweight object detection models for edge devices",
+      "authors": [
+        "Payal Mittal"
+      ],
+      "year": 2024,
+      "venue": "Artificial Intelligence Review",
+      "doi": "https://doi.org/10.1007/s10462-024-10877-1",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-024-10877-1.pdf",
+      "abstract": "This study concentrates on deep learning-based lightweight object detection models on edge devices. Designing such lightweight object recognition models is more difficult than ever due to the growing demand for accurate, quick, and low-latency models for various edge devices. The most recent deep learning-based lightweight object detection methods are comprehensively described in this work. Information on the lightweight backbone architectures used by these object detectors has been listed. The ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4316037971",
+      "title": "Deep Learning-Based Malicious Smart Contract and Intrusion Detection System for IoT Environment",
+      "authors": [
+        "Harshit Shah",
+        "Dhruvil Shah",
+        "Nilesh Kumar Jadav",
+        "Rajesh Gupta"
+      ],
+      "year": 2023,
+      "venue": "Mathematics",
+      "doi": "https://doi.org/10.3390/math11020418",
+      "pdf_url": "https://www.mdpi.com/2227-7390/11/2/418/pdf?version=1674004902",
+      "abstract": "The Internet of Things (IoT) is a key enabler technology that recently received significant attention from the scientific community across the globe. It helps transform everyone’s life by connecting physical and virtual devices with each other to offer staggering benefits, such as automation and control, higher productivity, real-time information access, and improved efficiency. However, IoT devices and their accumulated data are susceptible to various security threats and vulnerabilities, such ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4387673749",
+      "title": "Eyes in the Sky: Drones Applications in the Built Environment under Climate Change Challenges",
+      "authors": [
+        "Norhan Bayomi",
+        "John Fernández"
+      ],
+      "year": 2023,
+      "venue": "Drones",
+      "doi": "https://doi.org/10.3390/drones7100637",
+      "pdf_url": "https://www.mdpi.com/2504-446X/7/10/637/pdf?version=1697503638",
+      "abstract": "This paper reviews the diverse applications of drone technologies in the built environment and their role in climate change research. Drones, or unmanned aerial vehicles (UAVs), have emerged as valuable tools for environmental scientists, offering new possibilities for data collection, monitoring, and analysis in the urban environment. The paper begins by providing an overview of the different types of drones used in the built environment, including quadcopters, fixed-wing drones, and hybrid mod",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4411845177",
+      "title": "Energy-efficient deep learning-based intrusion detection system for edge computing: a novel DNN-KDQ model",
+      "authors": [
+        "Hafiz Gulfam Ahmad Umar",
+        "Iqra Yasmeen",
+        "Muhammad Aoun",
+        "Tehseen Mazhar"
+      ],
+      "year": 2025,
+      "venue": "Journal of Cloud Computing Advances Systems and Applications",
+      "doi": "https://doi.org/10.1186/s13677-025-00762-9",
+      "pdf_url": "https://journalofcloudcomputing.springeropen.com/counter/pdf/10.1186/s13677-025-00762-9",
+      "abstract": "The proliferation of the Internet of Things (IoT) and edge computing technologies has expanded the attack surface for cybercriminals, emphasizing the need for robust and efficient cybersecurity measures. Intrusion detection systems (IDS) are essential defenses; however, deploying traditional IDS solutions on edge devices remains challenging due to limited computational, memory, and energy resources. This research proposes an energy-efficient IDS framework based on a modified Deep Neural Network ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4410966375",
+      "title": "UGV-UAV Integration Advancements for Coordinated Missions: A Review",
+      "authors": [
+        "Farah Syazwani Shahar",
+        "Mohamed Thariq Hameed Sultan",
+        "Marek Nowakowski",
+        "Andrzej Łukaszewicz"
+      ],
+      "year": 2025,
+      "venue": "Journal of Intelligent & Robotic Systems",
+      "doi": "https://doi.org/10.1007/s10846-025-02273-w",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10846-025-02273-w.pdf",
+      "abstract": "The integration of Unmanned Ground Vehicles (UGVs) and Unmanned Aerial Vehicles (UAVs) represents a transformative leap in autonomous system coordination, combining ground mobility with aerial flexibility to tackle complex real-world missions. However, disparities in communication protocols, sensor interoperability, and autonomy frameworks pose persistent integration challenges. This review critically analyzes these gaps by synthesizing current literature and field practices. It introduces a nov",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W7125475055",
+      "title": "An LLM-Agnostic, MAVLink-Based Drone Command and Control Interface and Agentic Harness Using the Model Context Protocol",
+      "authors": [
+        "Javier N. Ramos-Silva",
+        "Peter John Burke"
+      ],
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2601.15486",
+      "pdf_url": "https://doi.org/10.48550/arxiv.2601.15486",
+      "abstract": "Artificial intelligence integrated with drone command and control (physical AI) offers a route to autonomy through large language models (LLMs), yet a unified LLM-to-drone interface has been missing. We present an LLM-agnostic command-and-control interface and agentic harness joining the Model Context Protocol (MCP) to MAVLink, the near-universal drone command-and-telemetry standard: \"DroneServer\" gives any MCP-capable LLM command, telemetry, mission, and safety functions over ArduPilot and PX4.",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4417282158",
+      "title": "Talk Less, Fly Lighter: Autonomous Semantic Compression for UAV Swarm Communication via LLMs",
+      "authors": [
+        "Fei Lin",
+        "Tengchao Zhang",
+        "Qinghua Ni",
+        "Jun Huang"
+      ],
+      "year": 2025,
+      "venue": "",
+      "doi": "https://doi.org/10.1109/mesa68091.2025.11278876",
+      "pdf_url": "https://arxiv.org/pdf/2508.12043",
+      "abstract": "The rapid adoption of Large Language Models (LLMs) in unmanned systems has significantly enhanced the semantic understanding and autonomous task execution capabilities of Unmanned Aerial Vehicle (UAV) swarms. However, limited communication bandwidth and the need for high-frequency interactions pose severe challenges to semantic information transmission within the swarm. This paper explores the feasibility of LLM-driven UAV swarms for autonomous semantic compression communication, aiming to reduc",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4385292943",
+      "title": "A Comprehensive Review of Recent Research Trends on UAVs",
+      "authors": [
+        "Kaled Telli",
+        "Okba Kraa",
+        "Yassine Himeur",
+        "Abdelmalik Ouamane"
+      ],
+      "year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2307.13691",
+      "pdf_url": "https://arxiv.org/pdf/2307.13691",
+      "abstract": "The growing interest in unmanned aerial vehicles (UAVs) from both scientific and industrial sectors has attracted a wave of new researchers and substantial investments in this expansive field. However, due to the wide range of topics and subdomains within UAV research, newcomers may find themselves overwhelmed by the numerous options available. It is therefore crucial for those involved in UAV research to recognize its interdisciplinary nature and its connections with other disciplines. This pap",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4413279544",
+      "title": "Secure Communication in Drone Networks: A Comprehensive Survey of Lightweight Encryption and Key Management Techniques",
+      "authors": [
+        "Sayani Sarkar",
+        "Sima Shafaei",
+        "Trishtanya S. Jones",
+        "Michael Wayne Totaro"
+      ],
+      "year": 2025,
+      "venue": "Drones",
+      "doi": "https://doi.org/10.3390/drones9080583",
+      "pdf_url": "https://www.mdpi.com/2504-446X/9/8/583/pdf?version=1755577797",
+      "abstract": "Deployment of Unmanned Aerial Vehicles (UAVs) continues to expand rapidly across a wide range of applications, including environmental monitoring, precision agriculture, and disaster response. Despite their increasing ubiquity, UAVs remain inherently vulnerable to security threats due to resource-constrained hardware, energy limitations, and reliance on open wireless communication channels. These factors render traditional cryptographic solutions impractical, thereby necessitating the developmen",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E1] Relies strictly on classical ML/DL without LLM or Foundation Model architecture"
+    },
+    {
+      "id": "https://openalex.org/W4415316620",
+      "title": "When Large Language Models Meet UAV Projects: An Empirical Study from Developers' Perspective",
+      "authors": [
+        "Yihua Chen",
+        "Que, Xingle",
+        "Jiashuo Zhang",
+        "Jiachi Chen"
+      ],
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "doi": "https://doi.org/10.48550/arxiv.2509.12795",
+      "pdf_url": "https://arxiv.org/pdf/2509.12795",
+      "abstract": "In recent years, unmanned aerial vehicles (UAVs) have become increasingly popular in our daily lives and have attracted significant research interest in software engineering. At the same time, large language models (LLMs) have made notable advancements in language understanding, reasoning, and generation, making LLM applications in UAVs a promising research direction. However, existing studies have largely remained in preliminary exploration with a limited understanding of real-world practice, w",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4366590727",
+      "title": "A Critical Cybersecurity Analysis and Future Research Directions for the Internet of Things: A Comprehensive Review",
+      "authors": [
+        "Usman Tariq",
+        "Irfan Ahmed",
+        "Ali Kashif Bashir",
+        "Kamran Shaukat"
+      ],
+      "year": 2023,
+      "venue": "Sensors",
+      "doi": "https://doi.org/10.3390/s23084117",
+      "pdf_url": "https://www.mdpi.com/1424-8220/23/8/4117/pdf?version=1681987201",
+      "abstract": "The emergence of the Internet of Things (IoT) technology has brought about tremendous possibilities, but at the same time, it has opened up new vulnerabilities and attack vectors that could compromise the confidentiality, integrity, and availability of connected systems. Developing a secure IoT ecosystem is a daunting challenge that requires a systematic and holistic approach to identify and mitigate potential security threats. Cybersecurity research considerations play a critical role in this r",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4316506832",
+      "title": "Unmanned aerial vehicles (UAVs): practical aspects, applications, open challenges, security issues, and future trends",
+      "authors": [
+        "Syed Agha Hassnain Mohsan",
+        "Nawaf Qasem Hamood Othman",
+        "Yanlong Li",
+        "Mohammed H. Alsharif"
+      ],
+      "year": 2023,
+      "venue": "Intelligent Service Robotics",
+      "doi": "https://doi.org/10.1007/s11370-022-00452-4",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11370-022-00452-4.pdf",
+      "abstract": "",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E1] Relies strictly on classical ML/DL without LLM or Foundation Model architecture"
+    },
+    {
+      "id": "https://openalex.org/W4319983517",
+      "title": "Autonomous Vehicles Enabled by the Integration of IoT, Edge Intelligence, 5G, and Blockchain",
+      "authors": [
+        "Anushka Biswas",
+        "Hwang-Cheng Wang"
+      ],
+      "year": 2023,
+      "venue": "Sensors",
+      "doi": "https://doi.org/10.3390/s23041963",
+      "pdf_url": "https://www.mdpi.com/1424-8220/23/4/1963/pdf?version=1676036742",
+      "abstract": "The wave of modernization around us has put the automotive industry on the brink of a paradigm shift. Leveraging the ever-evolving technologies, vehicles are steadily transitioning towards automated driving to constitute an integral part of the intelligent transportation system (ITS). The term autonomous vehicle has become ubiquitous in our lives, owing to the extensive research and development that frequently make headlines. Nonetheless, the flourishing of AVs hinges on many factors due to the ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4388201606",
+      "title": "Current trends in AI and ML for cybersecurity: A state-of-the-art survey",
+      "authors": [
+        "Nachaat AbdElatif Mohamed"
+      ],
+      "year": 2023,
+      "venue": "Cogent Engineering",
+      "doi": "https://doi.org/10.1080/23311916.2023.2272358",
+      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/23311916.2023.2272358?needAccess=true",
+      "abstract": "This paper provides a comprehensive survey of the state-of-the-art use of Artificial Intelligence (AI) and Machine Learning (ML) in the field of cybersecurity. The paper illuminates key applications of AI and ML in cybersecurity, while also addressing existing challenges and posing unresolved questions for future research. The paper also emphasizes the ethical and legal implications associated with their implementation. The researchers conducted a thorough survey by reviewing numerous papers and",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4391843476",
+      "title": "Artificial intelligence (AI) cybersecurity dimensions: a comprehensive framework for understanding adversarial and offensive AI",
+      "authors": [
+        "Masike Malatji",
+        "Alaa Tolah"
+      ],
+      "year": 2024,
+      "venue": "AI and Ethics",
+      "doi": "https://doi.org/10.1007/s43681-024-00427-4",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s43681-024-00427-4.pdf",
+      "abstract": "Abstract As Artificial Intelligence (AI) rapidly advances and integrates into various domains, cybersecurity emerges as a critical field grappling with both the benefits and pitfalls of AI technologies. This paper explores the multifaceted dimensions of AI-driven cyberattacks, offering insights into their implications, mitigation strategies, underlying motivations, and profound societal impacts. The research centres on developing and presenting the AI Cybersecurity Dimensions (AICD) Framework, a",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4405993426",
+      "title": "Cybersecurity Solutions for Industrial Internet of Things–Edge Computing Integration: Challenges, Threats, and Future Directions",
+      "authors": [
+        "Tamara Zhukabayeva",
+        "Lazzat Zholshiyeva",
+        "Nurdaulet Karabayev",
+        "Shafiullah Khan"
+      ],
+      "year": 2025,
+      "venue": "Sensors",
+      "doi": "https://doi.org/10.3390/s25010213",
+      "pdf_url": "https://www.mdpi.com/1424-8220/25/1/213/pdf?version=1735807010",
+      "abstract": "This paper provides the complete details of current challenges and solutions in the cybersecurity of cyber-physical systems (CPS) within the context of the IIoT and its integration with edge computing (IIoT-edge computing). We systematically collected and analyzed the relevant literature from the past five years, applying a rigorous methodology to identify key sources. Our study highlights the prevalent IIoT layer attacks, common intrusion methods, and critical threats facing IIoT-edge computing",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4403371192",
+      "title": "Leveraging generative AI for urban digital twins: a scoping review on the autonomous generation of urban data, scenarios, designs, and 3D city models for smart city advancement",
+      "authors": [
+        "Haowen Xu",
+        "Olufemi A. Omitaomu",
+        "Soheil Sabri",
+        "Sisi Zlatanova"
+      ],
+      "year": 2024,
+      "venue": "Urban Informatics",
+      "doi": "https://doi.org/10.1007/s44212-024-00060-w",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44212-024-00060-w.pdf",
+      "abstract": "Abstract The digital transformation of modern cities by integrating advanced information, communication, and computing technologies has marked the epoch of data-driven smart city applications for efficient and sustainable urban management. Despite their effectiveness, these applications often rely on massive amounts of high-dimensional and multi-domain data for monitoring and characterizing different urban sub-systems, presenting challenges in application areas that are limited by data quality a",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4386141811",
+      "title": "Prospects of Cybersecurity in Smart Cities",
+      "authors": [
+        "Fernando Luís Almeida"
+      ],
+      "year": 2023,
+      "venue": "Future Internet",
+      "doi": "https://doi.org/10.3390/fi15090285",
+      "pdf_url": "https://www.mdpi.com/1999-5903/15/9/285/pdf?version=1692856508",
+      "abstract": "The complex and interconnected infrastructure of smart cities offers several opportunities for attackers to exploit vulnerabilities and carry out cyberattacks that can have serious consequences for the functioning of cities’ critical infrastructures. This study aims to address this phenomenon and characterize the dimensions of security risks in smart cities and present mitigation proposals to address these risks. The study adopts a qualitative methodology through the identification of 62 Europea",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4403130936",
+      "title": "Navigating ethical challenges of explainable ai in autonomous systems",
+      "authors": [
+        "Joseph Nnaemeka Chukwunweike",
+        "Oluwarotimi Ayodele Lawal",
+        "John Babatope Arogundade",
+        "Bolape Alad e"
+      ],
+      "year": 2024,
+      "venue": "International Journal of Science and Research Archive",
+      "doi": "https://doi.org/10.30574/ijsra.2024.13.1.1872",
+      "pdf_url": "https://ijsra.net/sites/default/files/IJSRA-2024-1872.pdf",
+      "abstract": "The rapid integration of autonomous systems, such as vehicles, drones, and robots, into various sectors brings forth significant ethical challenges concerning their decision-making processes. This paper examines the role of Explainable AI (XAI) in addressing these challenges, particularly regarding accountability in the event of accidents and the necessity of human oversight in automated environments. We discuss the critical ethical implications of transparency, emphasizing how XAI can bridge th",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4391935777",
+      "title": "Advances and Vulnerabilities in Modern Cryptographic Techniques: A Comprehensive Survey on Cybersecurity in the Domain of Machine/Deep Learning and Quantum Techniques",
+      "authors": [
+        "Abid Mehmood",
+        "Arslan Shafique",
+        "Moatsum Alawida",
+        "Abdul Nasir Khan"
+      ],
+      "year": 2024,
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/access.2024.3367232",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10439158.pdf",
+      "abstract": "In the contemporary landscape, where a huge amount of data plays a vital role, the importance of strong and robust cybersecurity measures has become increasingly paramount. This research proposes a review and extensively explores cybersecurity techniques within the domain of machine/deep learning and quantum techniques, with a particular focus on cryptographic methods and methodologies applied to image encryption. The proposed survey covers a range of cybersecurity techniques, including quantum ",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4367665843",
+      "title": "AI for UAV-Assisted IoT Applications: A Comprehensive Review",
+      "authors": [
+        "Nan Cheng",
+        "Shen Wu",
+        "Xiucheng Wang",
+        "Zhisheng Yin"
+      ],
+      "year": 2023,
+      "venue": "IEEE Internet of Things Journal",
+      "doi": "https://doi.org/10.1109/jiot.2023.3268316",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6488907/6702522/10113154.pdf",
+      "abstract": "With the rapid development of the Internet of Things (IoT), there are a dramatically increasing number of devices, leading to the fact that only using terrestrial infrastructure can hardly provide high-quality services to all devices. Due to their flexibility, maneuverability, and economy, unmanned aerial vehicles (UAVs) are widely used to improve the performance of IoT networks. UAVs can not only provide wireless access to IoT devices in the absence of a terrestrial network but can also perform",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4393170828",
+      "title": "Privacy and Security Concerns in Generative AI: A Comprehensive Survey",
+      "authors": [
+        "Abenezer Golda",
+        "Kidus Abebe Mekonen",
+        "Amit Pandey",
+        "Anushka Singh"
+      ],
+      "year": 2024,
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/access.2024.3381611",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10478883.pdf",
+      "abstract": "Generative Artificial Intelligence (GAI) has sparked a transformative wave across various domains, including machine learning, healthcare, business, and entertainment, owing to its remarkable ability to generate lifelike data. This comprehensive survey offers a meticulous examination of the privacy and security challenges inherent to GAI. It provides five pivotal perspectives essential for a comprehensive understanding of these intricacies. The paper encompasses discussions on GAI architectures,",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4404238463",
+      "title": "Generative AI for Advanced UAV Networking",
+      "authors": [
+        "Geng Sun",
+        "Wenwen Xie",
+        "Dusit Tao Niyato",
+        "Hongyang Du"
+      ],
+      "year": 2024,
+      "venue": "IEEE Network",
+      "doi": "https://doi.org/10.1109/mnet.2024.3494862",
+      "pdf_url": "http://hub.hku.hk/bitstream/10722/353232/1/content.pdf",
+      "abstract": "With the impressive achievements of chatGPT and Sora, generative artificial intelligence (GAI) has received increasing attention. Not limited to the field of content generation, GAI is also widely used to solve the problems in wireless communication scenarios due to its powerful learning and generalization capabilities. Therefore, we discuss key applications of GAI in improving unmanned aerial vehicle (UAV) communication and networking performance in this article. Specifically, we first review t",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4402350838",
+      "title": "Generative AI for Space-Air-Ground Integrated Networks",
+      "authors": [
+        "Ruichen Zhang",
+        "Hongyang Du",
+        "Dusit Tao Niyato",
+        "Jiawen Kang"
+      ],
+      "year": 2024,
+      "venue": "IEEE Wireless Communications",
+      "doi": "https://doi.org/10.1109/mwc.016.2300547",
+      "pdf_url": "https://arxiv.org/pdf/2311.06523",
+      "abstract": "Recently, generative AI technologies have emerged as significant advancements in the artificial intelligence field, renowned for their language and image generation capabilities. Meantime, the space-air-ground integrated network (SAGIN) is an integral part of future B5G/6G for achieving ubiquitous connectivity. Inspired by this, this article explores an integration of generative AI in SAGIN, focusing on potential applications and a case study. We first provide a comprehensive review of SAGIN and",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4324061701",
+      "title": "YOLO-Based UAV Technology: A Review of the Research and Its Applications",
+      "authors": [
+        "Chunling Chen",
+        "Ziyue Zheng",
+        "Tongyu Xu",
+        "Shuang Guo"
+      ],
+      "year": 2023,
+      "venue": "Drones",
+      "doi": "https://doi.org/10.3390/drones7030190",
+      "pdf_url": "https://www.mdpi.com/2504-446X/7/3/190/pdf?version=1678445792",
+      "abstract": "In recent decades, scientific and technological developments have continued to increase in speed, with researchers focusing not only on the innovation of single technologies but also on the cross-fertilization of multidisciplinary technologies. Unmanned aerial vehicle (UAV) technology has seen great progress in many aspects, such as geometric structure, flight characteristics, and navigation control. The You Only Look Once (YOLO) algorithm was developed and has been refined over the years to pro",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "https://openalex.org/W4385423342",
+      "title": "A Review of Anomaly Detection Strategies to Detect Threats to Cyber-Physical Systems",
+      "authors": [
+        "Nicholas Jeffrey",
+        "Qing Tan",
+        "Jose Ramon Villar"
+      ],
+      "year": 2023,
+      "venue": "Electronics",
+      "doi": "https://doi.org/10.3390/electronics12153283",
+      "pdf_url": "https://www.mdpi.com/2079-9292/12/15/3283/pdf?version=1690785380",
+      "abstract": "Cyber-Physical Systems (CPS) are integrated systems that combine software and physical components. CPS has experienced rapid growth over the past decade in fields as disparate as telemedicine, smart manufacturing, autonomous vehicles, the Internet of Things, industrial control systems, smart power grids, remote laboratory environments, and many more. With the widespread integration of Cyber-Physical Systems (CPS) in various aspects of contemporary society, the frequency of malicious assaults car",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4394564352",
+      "title": "Generative AI for Cyber Security: Analyzing the Potential of ChatGPT, DALL-E, and Other Models for Enhancing the Security Space",
+      "authors": [
+        "Siva Sai",
+        "Utkarsh Yashvardhan",
+        "Vinay Chamola",
+        "Biplab Sikdar"
+      ],
+      "year": 2024,
+      "venue": "IEEE Access",
+      "doi": "https://doi.org/10.1109/access.2024.3385107",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10491270.pdf",
+      "abstract": "This research paper intends to provide real-life applications of Generative AI (GAI) in the cybersecurity domain. The frequency, sophistication and impact of cyber threats have continued to rise in today’s world. This ever-evolving threat landscape poses challenges for organizations and security professionals who continue looking for better solutions to tackle these threats. GAI technology provides an effective way for them to address these issues in an automated manner with increasing efficienc",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "https://openalex.org/W4391547794",
+      "title": "At the Dawn of Generative AI Era: A Tutorial-cum-Survey on New Frontiers in 6G Wireless Intelligence",
+      "authors": [
+        "Abdulkadir Çelik",
+        "Ahmed M. Eltawil"
+      ],
+      "year": 2024,
+      "venue": "IEEE Open Journal of the Communications Society",
+      "doi": "https://doi.org/10.1109/ojcoms.2024.3362271",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/8782661/8901158/10422716.pdf",
+      "abstract": "As we transition from the 5G epoch, a new horizon beckons with the advent of 6G, seeking a profound fusion with novel communication paradigms and emerging technological trends, bringing once-futuristic visions to life along with added technical intricacies. Although analytical models lay the foundations and offer systematic insights, we have recently witnessed a noticeable surge in research suggesting machine learning (ML) and artificial intelligence (AI) can efficiently deal with complex proble",
+      "source": "OpenAlex",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "http://arxiv.org/abs/2507.17188v4",
+      "title": "LLM-Aided Joint Secrecy Precoding and Trajectory for RSMA-Based Heterogeneous UAV Networks",
+      "authors": [
+        "Lijie Zheng",
+        "Ji He",
+        "Shih Yu Chang",
+        "Yulong Shen"
+      ],
+      "year": 2025,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2507.17188v4",
+      "pdf_url": "https://arxiv.org/pdf/2507.17188v4",
+      "abstract": "This paper investigates secure communications in rate-splitting multiple access (RSMA) enabled heterogeneous UAV networks, where multiple UAVs collaboratively serve ground terminals in the presence of eavesdroppers. By jointly considering secrecy rate maximization and propulsion energy consumption minimization, we formulate a multi-objective optimization problem involving UAV trajectory design, service association, power allocation, and secrecy precoding under mobility, collision-avoidance, serv",
+      "source": "arXiv",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.18083v1",
+      "title": "Automating Function-Level TARA for Automotive Full-Lifecycle Security",
+      "authors": [
+        "Yuqiao Yang",
+        "Yongzhao Zhang",
+        "Wenhao Liu",
+        "Jun Li"
+      ],
+      "year": 2025,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2504.18083v1",
+      "pdf_url": "https://arxiv.org/pdf/2504.18083v1",
+      "abstract": "As modern vehicles evolve into intelligent and connected systems, their growing complexity introduces significant cybersecurity risks. Threat Analysis and Risk Assessment (TARA) has therefore become essential for managing these risks under mandatory regulations. However, existing TARA automation methods rely on static threat libraries, limiting their utility in the detailed, function-level analyses demanded by industry. This paper introduces DefenseWeaver, the first system that automates functio",
+      "source": "arXiv",
+      "exclusion_reason": "[E4] General IoT/network security without UAV/drone application"
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.10434v1",
+      "title": "Conversational versus Dashboard Explainable AI for UAV Intrusion Detection: An Empirical Study of Operator Trust and Reliance",
+      "authors": [
+        "Cong Chi Nguyen",
+        "Trang Mai Xuan",
+        "Vu-Duc Ngo",
+        "Kim-Ngan Thi Nguyen"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2608.10434v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10434v1",
+      "abstract": "Machine learning-based Intrusion Detection Systems (IDS) have demonstrated superior performance in securing Unmanned Aerial Vehicle (UAV) networks. However, the 'black-box' nature of these models, combined with the high dimensionality of multimodal cyber-physical data, poses significant interpretability challenges. Static visualization dashboards may struggle to present complex relationships among multimodal cyber-physical features in a form that is easy for operators to inspect and interpret. T",
+      "source": "arXiv",
+      "exclusion_reason": "[E1] Relies strictly on classical ML/DL without LLM or Foundation Model architecture"
+    },
+    {
+      "id": "http://arxiv.org/abs/2601.19345v1",
+      "title": "AI-driven Intrusion Detection for UAV in Smart Urban Ecosystems: A Comprehensive Survey",
+      "authors": [
+        "Abdullah Khanfor",
+        "Raby Hamadi",
+        "Noureddine Lasla",
+        "Hakim Ghazzai"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2601.19345v1",
+      "pdf_url": "https://arxiv.org/pdf/2601.19345v1",
+      "abstract": "UAVs have the potential to revolutionize urban management and provide valuable services to citizens. They can be deployed across diverse applications, including traffic monitoring, disaster response, environmental monitoring, and numerous other domains. However, this integration introduces novel security challenges that must be addressed to ensure safe and trustworthy urban operations. This paper provides a structured, evidence-based synthesis of UAV applications in smart cities and their associ",
+      "source": "arXiv",
+      "exclusion_reason": "[E1] Relies strictly on classical ML/DL without LLM or Foundation Model architecture"
+    },
+    {
+      "id": "http://arxiv.org/abs/2602.23719v1",
+      "title": "SAGE-LLM: Towards Safe and Generalizable LLM Controller with Fuzzy-CBF Verification and Graph-Structured Knowledge Retrieval for UAV Decision",
+      "authors": [
+        "Wenzhe Zhao",
+        "Yang Zhao",
+        "Ganchao Liu",
+        "Zhiyu Jiang"
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "doi": "http://arxiv.org/abs/2602.23719v1",
+      "pdf_url": "https://arxiv.org/pdf/2602.23719v1",
+      "abstract": "In UAV dynamic decision, complex and variable hazardous factors pose severe challenges to the generalization capability of algorithms. Despite offering semantic understanding and scene generalization, Large Language Models (LLM) lack domain-specific UAV control knowledge and formal safety assurances, restricting their direct applicability. To bridge this gap, this paper proposes a train-free two-layer decision architecture based on LLMs, integrating high-level safety planning with low-level prec",
+      "source": "arXiv",
+      "exclusion_reason": "[E2] UAV study focused on navigation/control/delivery without cybersecurity/threat focus"
+    }
+  ]
+}
