@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>ملخص الورقة البحثية 03: UAVThreatBench</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background-color: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+  }
+  .header-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border-bottom: 4px solid #38bdf8;
+  }
+  .header-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    color: #f8fafc;
+  }
+  .header-subtitle {
+    font-size: 13px;
+    color: #93c5fd;
+    margin-bottom: 10px;
+    direction: ltr;
+    text-align: right;
+  }
+  .badge-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #e0f2fe;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    border-right: 4px solid #2563eb;
+    padding-right: 10px;
+    margin: 18px 0 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .metric-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  .metric-val {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1d4ed8;
+    margin-bottom: 2px;
+    direction: ltr;
+  }
+  .metric-lbl {
+    font-size: 11px;
+    color: #64748b;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  th, td {
+    padding: 7px 10px;
+    border: 1px solid #cbd5e1;
+    text-align: right;
+  }
+  th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+  }
+  ul {
+    margin: 6px 0;
+    padding-right: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .path-box {
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .path-1 {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-right: 5px solid #22c55e;
+  }
+  .path-2 {
+    background: #fefce8;
+    border: 1px solid #fde047;
+    border-right: 5px solid #eab308;
+  }
+  .path-3 {
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-right: 5px solid #ef4444;
+  }
+  .path-header {
+    font-size: 13.5px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tag {
+    font-size: 10.5px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .tag-green { background: #dcfce7; color: #166534; }
+  .tag-yellow { background: #fef9c3; color: #854d0e; }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+  .code-inline {
+    background: #e2e8f0;
+    color: #0f172a;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 11.5px;
+    direction: ltr;
+    display: inline-block;
+  }
+  .formula-box {
+    background: #ffffff;
+    border: 1px dashed #94a3b8;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-family: Consolas, monospace;
+    direction: ltr;
+    text-align: center;
+    color: #0369a1;
+    font-size: 11.5px;
+  }
+  .footer {
+    text-align: center;
+    font-size: 10.5px;
+    color: #94a3b8;
+    margin-top: 25px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-card">
+  <div class="header-title">ملخص الورقة البحثية 03: UAVThreatBench</div>
+  <div class="header-subtitle">A UAV Cybersecurity Risk Assessment Dataset and Empirical Benchmarking of LLMs for Threat Identification</div>
+  <div class="badge-row">
+    <span class="badge">EU RED 2014/53/EU</span>
+    <span class="badge">ETSI EN 18031-1:2024</span>
+    <span class="badge">Industrial Indoor UAVs</span>
+    <span class="badge">Token Set Ratio Evaluation</span>
+    <span class="badge">MDPI Drones 2025</span>
+  </div>
+</div>
+
+<!-- 1. بطاقة التعريف والنتائج -->
+<div class="section-title">1. بطاقة تعريف الورقة والنتائج المحققة (Quick Scan)</div>
+<div class="card">
+  <p><strong>الفكرة الجوهرية:</strong> تقديم أول منصة ومجموعة بيانات تقييم معياري متخصصة (<strong>UAVThreatBench</strong>) مكونة من <strong>924</strong> سيناريو صناعي و <strong>4620</strong> تهديداً أمنياً مصنفاً ومربوطاً ببنود التوجيه الأوروبي لمعدات الراديو (<strong>RED 2014/53/EU</strong> Articles 3.3(d, e, f)) لتقييم قدرة النماذج اللغوية على استنتاج التهديدات السيبرانية للدرونز الصناعية.</p>
+  <p><strong>المشكلة الأساسية:</strong> غياب بيئات التقييم القياسية المقيدة باللوائح التشريعية الملزمة، واختبار كفاءة 7 نماذج ذكاء اصطناعي تأسيسية (من عائلتي GPT و LLaMA) في مطابقة وتصنيف المخاطر الميدانية ومقارنتها بالتقييم الخبير.</p>
+  
+  <div class="metric-grid">
+    <div class="metric-box">
+      <div class="metric-val">87%</div>
+      <div class="metric-lbl">أعلى تطابق كلي (GPT-4o)</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">46%</div>
+      <div class="metric-lbl">تطابق السيناريو التام (GPT-4o)</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">1.4 s</div>
+      <div class="metric-lbl">أسرع استدلال (GPT-3.5-turbo)</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">924</div>
+      <div class="metric-lbl">سيناريو صناعي مقيد باللوائح</div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. المعجم والمفاهيم العلمية -->
+<div class="section-title">2. المعجم والمفاهيم العلمية (Terminology & Acronyms)</div>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 28%;">المصطلح / الاختصار</th>
+        <th>التعريف التقني الدقيق ودوره في المنظومة</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>RED 2014/53/EU</strong></td>
+        <td>توجيه معدات الراديو الأوروبي؛ اللائحة القانونية الملزمة لسلامة الشبكات والأجهزة (3.3d)، حماية البيانات والخصوصية (3.3e)، ومنع الاحتيال المالي (3.3f).</td>
+      </tr>
+      <tr>
+        <td><strong>ETSI EN 18031-1:2024</strong></td>
+        <td>المعيار التوافقي الأوروبي المنبثق عن ETSI الذي يحدد متطلبات واختبارات الأمان السيبراني للأجهزة المتصلة بالإنترنت والراديو.</td>
+      </tr>
+      <tr>
+        <td><strong>Token Set Ratio (TSR)</strong></td>
+        <td>خوارزمية قياس التشابه المعجمي المجموعاتي؛ تحسب درجة المطابقة بين مخرجات النموذج وقرار الخبير عبر عزل التقاطعات وحساب مسافة ليفنشتاين.</td>
+      </tr>
+      <tr>
+        <td><strong>Bipartite Decision Rule</strong></td>
+        <td>شرط التحكيم المزدوج؛ اعتبار السيناريو ناجحاً بالكامل فقط إذا حقق كلا التهديدين نسبة تشابه TSR &ge; 70.</td>
+      </tr>
+      <tr>
+        <td><strong>Flying CPS Edge Node</strong></td>
+        <td>التعامل مع الدرون كعقدة حافة حوسبية سيبرانية-فيزيائية طائرة مدمجة في شبكات التكنولوجيا التشغيلية (OT).</td>
+      </tr>
+      <tr>
+        <td><strong>Backend Logic Blindness</strong></td>
+        <td>العمى الأمني لمنطق الأنظمة الخلفية؛ عجز النماذج اللغوية عن الربط بين اختراق إشارة الدرون والتلاعب بقواعد بيانات WMS/MES ووحدات PLC.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 3. التفكيك المنهجي والأدوات -->
+<div class="section-title">3. التفكيك المنهجي والأدوات (Methodology & Stack)</div>
+<div class="card">
+  <p><strong>المعمارية ثلاثية الطبقات ومحاور التهديدات:</strong></p>
+  <ul>
+    <li><strong>طبقة نظام الدرون الفرعي (UAV Subsystem):</strong> المستشعرات، متحكم الطيران، والبرمجيات الثابتة، مع بث حزم MAVLink / DDS.</li>
+    <li><strong>طبقة شبكة التكنولوجيا التشغيلية (OT Network Layer):</strong> قنوات Wi-Fi Enterprise، شبكات 5G الخاصة، ومحطات الرسو والشحن الآلي (Docking Ports).</li>
+    <li><strong>طبقة الأنظمة الخلفية والسحابية (Cloud & Backend):</strong> قواعد بيانات إدارة المستودعات WMS وأنظمة التصنيع MES ووحدات التحكم PLC.</li>
+  </ul>
+
+  <p><strong>النتائج المقارنة للنماذج السبعة المختبرة (Empirical Benchmarks):</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>النموذج</th>
+        <th>التطابق الكلي</th>
+        <th>التطابق التام للسيناريو</th>
+        <th>زمن الاستدلال</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>GPT-4o</strong></td><td>87%</td><td>46%</td><td>2.4 s</td></tr>
+      <tr><td><strong>GPT-3.5-turbo</strong></td><td>79%</td><td>35%</td><td>1.4 s</td></tr>
+      <tr><td><strong>GPT-4.1-mini</strong></td><td>79%</td><td>28%</td><td>2.6 s</td></tr>
+      <tr><td><strong>LLaMA-3.3-70B</strong></td><td>76%</td><td>19%</td><td>6.5 s</td></tr>
+      <tr><td><strong>GPT-4.1</strong></td><td>72%</td><td>29%</td><td>2.4 s</td></tr>
+      <tr><td><strong>LLaMA-3.1-70B</strong></td><td>59%</td><td>15%</td><td>21.2 s</td></tr>
+      <tr><td><strong>GPT-4.1-nano</strong></td><td>44%</td><td>13%</td><td>1.7 s</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>الصيغ الرياضية لخوارزمية Token Set Ratio:</strong></p>
+  <div class="formula-box">
+    TSR(s<sub>1</sub>, s<sub>2</sub>) = max [ Ratio(t<sub>0</sub>, t<sub>1</sub>), Ratio(t<sub>0</sub>, t<sub>2</sub>), Ratio(t<sub>1</sub>, t<sub>2</sub>) ]
+  </div>
+  <div class="formula-box">
+    Match(T<sub>pred</sub>, T<sub>gt</sub>) = 1 &nbsp; if TSR &ge; 70, &nbsp; else 0
+  </div>
+</div>
+
+<!-- 4. فرص الابتكار والقيود -->
+<div class="section-title">4. فرص الابتكار والقيود (Innovation & Gap Analysis)</div>
+<div class="card">
+  <ul>
+    <li><strong>الانحياز للسرية وتجاهل التوافرية:</strong> تفوقت النماذج في رصد انتهاكات الخصوصية والبيانات (المادة 3.3e) بنسبة &gt; 80%، لكنها فشلت في رصد التشويش وحجب الخدمة DoS (المادة 3.3d) والاحتيال المالي (المادة 3.3f).</li>
+    <li><strong>البطء الزمني وقيود الحافة:</strong> تراوح زمن الاستدلال بين 1.4 s و 21.2 s، مما يحصر دور النماذج في التدقيق المكتبي غير المتزامن (Offline Auditing) ويمنع استخدامها كنظام دفاع فوري على متن الدرون (&lt; 50 ms).</li>
+    <li><strong>غياب بيئات الطيران الخارجية (Indoor Only):</strong> حصر السيناريوهات الـ 924 في المستودعات المغلقة دون التطرق لهجمات انتحال GPS الخارجية أو شبكات FANET الواسعة.</li>
+  </ul>
+</div>
+
+<!-- 5. مصفوفة مقترحات المشاريع والفجوات -->
+<div class="section-title">5. مصفوفة مقترحات المشاريع والفجوات (مرتبة تصاعدياً من الأسهل للأصعب)</div>
+
+<div class="path-box path-1">
+  <div class="path-header">
+    <span>🟢 المسار 1: الأسهل والأقل تكلفة (Prompt Benchmarking / CPU / $0)</span>
+    <span class="tag tag-green">تكلفة: $0 | أسبوع - أسبوعان</span>
+  </div>
+  <ul>
+    <li><strong>البيئات والبيانات:</strong> تقييم نماذج مفتوحة مكممة صغيرة (LLaMA-3.2-1B أو Phi-3) عبر Ollama على المعالج المركزي (CPU) باستخدام سيناريوهات UAVThreatBench ومكتبة fuzzywuzzy لحساب Token Set Ratio.</li>
+    <li><strong>المطلوب:</strong> اختبار هندسة الموجهات الدلالية الموجهة نحو التوافرية (Availability Cues) لمعالجة الانحياز التلقائي للنماذج.</li>
+  </ul>
+</div>
+
+<div class="path-box path-2">
+  <div class="path-header">
+    <span>🟡 المسار 2: متوسط الصعوبة والتكلفة (RAG-Based Regulatory Compliance Auditor)</span>
+    <span class="tag tag-yellow">تكلفة: $0 | 3 - 4 أسابيع</span>
+  </div>
+  <ul>
+    <li><strong>البيئات والبيانات:</strong> بناء مدقق امتثال أمني عبر تقنية الاسترجاع المعزز (RAG) يربط سيناريوهات الطيران بالمواد القانونية للتوجيه الأوروبي RED والمعيار التوافقي ETSI EN 18031-1 باستخدام ChromaDB و LangChain.</li>
+    <li><strong>المطلوب:</strong> توليد تقارير تدقيق امتثال أوتوماتيكية للشركات المصنعة للدرونز تمنع الهلوسة وتحدد نسبة المطابقة التنظيمية.</li>
+  </ul>
+</div>
+
+<div class="path-box path-3">
+  <div class="path-header">
+    <span>🔴 المسار 3: الأعلى صعوبة وتكلفة (Neuro-Symbolic Real-Time Edge Guard)</span>
+    <span class="tag tag-red">تكلفة: $300 - $600 | 2 - 3 أشهر</span>
+  </div>
+  <ul>
+    <li><strong>البيئات والبيانات:</strong> معمارية هجينة عصبية-رمزية؛ دمج كاشف شذوذ حزم شبكي حتمي لحظي (&lt; 15 ms) مع نموذج لغوي فائق الصغر مكمم (SmolLM-1.7B) يعمل على مسرع NVIDIA Jetson Orin Nano داخل بيئة محاكاة PX4 SITL / ROS 2.</li>
+    <li><strong>المطلوب:</strong> استدعاء النموذج اللغوي فقط عند الاشتباه لتفسير الهجوم، التحقق من مطابقة متطلبات السلامة، وإصدار أمر الهبوط الآمن التلقائي.</li>
+  </ul>
+</div>
+
+<div class="footer">
+  تم التوليد والتصدير بواسطة منصة Research Paper Analyzer v2 &bull; جامعة وأبحاث أمن الطائرات المسيّرة &bull; 2026
+</div>
+
+</body>
+</html>

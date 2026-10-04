@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>ملخص الورقة البحثية 01: Aero-LLM</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background-color: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+    font-size: 13.5px;
+    margin: 0;
+    padding: 0;
+  }
+  .header-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #38bdf8;
+  }
+  .header-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #f8fafc;
+  }
+  .header-subtitle {
+    font-size: 14px;
+    color: #93c5fd;
+    margin-bottom: 12px;
+  }
+  .badge-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11.5px;
+    color: #e0f2fe;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    border-right: 4px solid #2563eb;
+    padding-right: 10px;
+    margin: 20px 0 12px 0;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    page-break-inside: avoid;
+  }
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .metric-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  .metric-val {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1d4ed8;
+    margin-bottom: 2px;
+    direction: ltr;
+  }
+  .metric-lbl {
+    font-size: 11px;
+    color: #64748b;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12.5px;
+  }
+  th, td {
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    text-align: right;
+  }
+  th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+  }
+  ul {
+    margin: 6px 0;
+    padding-right: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .path-box {
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .path-1 {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-right: 5px solid #22c55e;
+  }
+  .path-2 {
+    background: #fefce8;
+    border: 1px solid #fde047;
+    border-right: 5px solid #eab308;
+  }
+  .path-3 {
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-right: 5px solid #ef4444;
+  }
+  .path-header {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tag {
+    font-size: 10.5px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .tag-green { background: #dcfce7; color: #166534; }
+  .tag-yellow { background: #fef9c3; color: #854d0e; }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+  .code-inline {
+    background: #e2e8f0;
+    color: #0f172a;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 11.5px;
+    direction: ltr;
+    display: inline-block;
+  }
+  .formula-box {
+    background: #ffffff;
+    border: 1px dashed #94a3b8;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-family: Consolas, monospace;
+    direction: ltr;
+    text-align: center;
+    color: #0369a1;
+    font-size: 12px;
+  }
+  .footer {
+    text-align: center;
+    font-size: 10.5px;
+    color: #94a3b8;
+    margin-top: 25px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-card">
+  <div class="header-title">ملخص الورقة البحثية 01: Aero-LLM</div>
+  <div class="header-subtitle">A Distributed Hierarchical LLM Framework for Unmanned Aerial Vehicle Cybersecurity</div>
+  <div class="badge-row">
+    <span class="badge">UAV Cybersecurity</span>
+    <span class="badge">Distributed LLM Architecture</span>
+    <span class="badge">MAVLink / TCP Anomaly Detection</span>
+    <span class="badge">TimesNet & Time-LLM</span>
+    <span class="badge">3-Tier Edge-Cloud Computing</span>
+  </div>
+</div>
+
+<!-- 1. بطاقة التعريف والنتائج -->
+<div class="section-title">1. بطاقة تعريف الورقة والنتائج المحققة (Quick Scan)</div>
+<div class="card">
+  <p><strong>الفكرة الجوهرية:</strong> ابتكار إطار عمل أمني هجين وموزع يُدعى <strong>Aero-LLM</strong> يدمج فريقاً من النماذج اللغوية الكبيرة والمتخصصة خفيفة الوزن بدلاً من الاعتماد على نموذج أحادي ضخم؛ حيث تُوزَّع النماذج وظيفياً عبر 3 مستويات حوسبية (على متن الطائرة On-board، وعند الحافة Edge، وفي السحابة Cloud) لتنفيذ الاستدلال اللحظي، كشف الشذوذ، والتنبؤ الدقيق لتأمين اتصالات الطائرات المسيّرة (UAVs).</p>
+  <p><strong>المشكلة الأساسية:</strong> حماية قنوات الاتصال والبيانات الحركية بين الطائرات المسيّرة ومحطات التحكم الأرضية (GCS) من الهجمات السيبرانية (مثل التشويش، الانتحال، رجل المنتصف، والتلاعب ببيانات الحساسات)، مع تجاوز قيود الموارد الحوسبية المحدودة على متن الطائرة والتغلب على عنق زجاجة الأداء وزمن التأخير الصارم للمهام الحرجة.</p>
+  
+  <div class="metric-grid">
+    <div class="metric-box">
+      <div class="metric-val">100%</div>
+      <div class="metric-lbl">دقة التنبؤ بحقول الحزم الحيوية</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">84.38%</div>
+      <div class="metric-lbl">دقة كشف الشذوذ (TimesNet)</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">0.8050</div>
+      <div class="metric-lbl">مقياس F1-score</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">&gt; 82%</div>
+      <div class="metric-lbl">دقة التنبؤ الزمني (Time-LLM)</div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. المعجم والمفاهيم -->
+<div class="section-title">2. المعجم والمفاهيم العلمية (Terminology & Acronyms)</div>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">المصطلح / الاختصار</th>
+        <th>المفهوم العلمي والوظيفة التشغيلية</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>UAV & GCS</strong></td>
+        <td>الطائرة بدون طيار ومحطة التحكم الأرضية؛ شبكة التحكم والمراقبة وتبادل الأوامر والقياسات الحركية عن بُعد.</td>
+      </tr>
+      <tr>
+        <td><strong>MAVLink</strong></td>
+        <td>بروتوكول اتصالات متسلسل خفيف جداً لنقل رسائل التيليميتري والتحكم بين الدرون ومحطة القيادة.</td>
+      </tr>
+      <tr>
+        <td><strong>SITL / HITL</strong></td>
+        <td>المحاكاة البرمجية بالكامل (Software-in-the-Loop) والمحاكاة بمشاركة العتاد (Hardware-in-the-Loop) مع أجهزة مثل Pixhawk.</td>
+      </tr>
+      <tr>
+        <td><strong>SFT & RLHF</strong></td>
+        <td>الضبط الخاضع للإشراف لتدريب النموذج على استخراج الحقول، متبوعاً بالتعلم التعزيزي من التغذية البشرية لتعزيز الصلابة.</td>
+      </tr>
+      <tr>
+        <td><strong>Sensor Manipulation</strong></td>
+        <td>هجمات حقن البيانات المزيفة (FDI) على حساسات الجيروسكوب ومقياس التسارع لإفساد استقرار وتحكم الطائرة.</td>
+      </tr>
+      <tr>
+        <td><strong>Sliding Window</strong></td>
+        <td>تحويل تدفقات حزم الشبكة وسجلات الطيران إلى نوافذ زمنية متتالية لاستخدام السياق في توقع القيم القادمة.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 3. المعمارية المنهجية والمنطق الرياضي -->
+<div class="section-title">3. التفكيك المنهجي والمنطق الرياضي (Methodology & Logic)</div>
+<div class="card">
+  <p><strong>المعمارية الموزعة ثلاثية المستويات (Three-Tiered Distributed Architecture):</strong></p>
+  <ul>
+    <li><strong>المستوى 1 (على متن الطائرة On-board):</strong> نماذج فائقة الخفة (<span class="code-inline">OPT-125M</span> و <span class="code-inline">OPT-350M</span>) للاستدلال السريع اللحظي دون استهلاك للبطارية.</li>
+    <li><strong>المستوى 2 (عند الحافة Edge):</strong> نماذج متوسطة (<span class="code-inline">OPT-1.3B</span> و <span class="code-inline">TimesNet</span>) لمعالجة التدفقات المجمعة وكشف الشذوذ في سجلات الطيران وإرسال التحذيرات.</li>
+    <li><strong>المستوى 3 (في السحابة Cloud):</strong> نماذج عملاقة (<span class="code-inline">LLaMA-2-7B</span> و <span class="code-inline">Time-LLM</span>) للتنبؤ طويل المدى والتدريب التكراري غير المتصل.</li>
+  </ul>
+
+  <p><strong>المنطق الإجرائي لكشف الشذوذ (Algorithm 1):</strong></p>
+  <div class="formula-box">Loss = MSE(P - G) &nbsp;|&nbsp; Threshold = Percentile(L, 100 - A)</div>
+  <p style="font-size: 12px; color: #475569; margin: 4px 0;">إذا كانت قيمة الخسارة <span class="code-inline">Loss &gt; Threshold</span> تُصنف العينة فورياً كشذوذ وتُرسل برقية استغاثة/تصحيح إلى محطة التحكم.</p>
+</div>
+
+<!-- 4. الفجوات والقيود -->
+<div class="section-title">4. الفجوات والقيود البحثية (Limitations & Vulnerabilities)</div>
+<div class="card">
+  <ul>
+    <li><strong>ضعف الحقول التراكمية:</strong> انخفاض دقة التنبؤ بحقل <span class="code-inline">TCP ACK</span> إلى <strong>48.10%</strong> لـ OPT-350M و <strong>53.97%</strong> لـ OPT-1.3B بسبب السلوك التراكمي العشوائي للأرقام.</li>
+    <li><strong>عنق زجاجة وصلة الاتصال (Jamming Risk):</strong> في حالة التشويش الراديوي الكامل وانقطاع الاتصال بالسحابة أو الحافة، تقتصر قدرة الدرون على نماذج On-board الصغيرة فقط.</li>
+    <li><strong>غياب الاختبارات الميدانية للأسراب:</strong> اقتصر التقييم على محاكاة طائرة واحدة (Single-UAV) دون تجربة تشويش واقعية على أسراب (Swarms) في بيئات جوية متغيرة.</li>
+  </ul>
+</div>
+
+<!-- 5. مصفوفة التوصيات والمشاريع التطبيقية مرتبة تصاعدياً -->
+<div class="section-title">5. مسارات الفجوات ومشاريع التخرج (مرتبة تصاعدياً من الأسهل والأقل تكلفة للأصعب)</div>
+
+<div class="path-box path-1">
+  <div class="path-header">
+    <span style="color: #15803d;">المسار 1: الأسهل والأقل تكلفة (Software-Only / Low-Resource)</span>
+    <span class="tag tag-green">مجاني بالكامل - صفر عتاد</span>
+  </div>
+  <p><strong>طبيعة العمل:</strong> محاكاة برمجية 100% تعمل على أي حاسوب محمول متوسط دون الحاجة لشراء أي أجهزة.</p>
+  <ul>
+    <li><strong>البيانات والمحاكاة:</strong> استخدام محاكي <span class="code-inline">PX4/ArduPilot SITL</span> المجاني مع <span class="code-inline">QGroundControl</span> ومجموعات بيانات <span class="code-inline">UAVThreatBench</span>.</li>
+    <li><strong>التقنيات:</strong> استخدام نماذج مكممة صغيرة جداً (<span class="code-inline">TinyLlama</span> أو <span class="code-inline">Phi-3-mini</span>) تعمل على CPU عبر <span class="code-inline">llama.cpp</span>، مع نظام RAG محلي مجاني (<span class="code-inline">ChromaDB</span>) لربط سجلات uLog المشبوهة بإجراءات أمان فورية.</li>
+  </ul>
+</div>
+
+<div class="path-box path-2">
+  <div class="path-header">
+    <span style="color: #a16207;">المسار 2: متوسط الصعوبة والتكلفة (Hybrid / Moderate Compute)</span>
+    <span class="tag tag-yellow">عتاد منخفض التكلفة + حوسبة سحابية</span>
+  </div>
+  <p><strong>طبيعة العمل:</strong> اختبار بروتوكول حقيقي مع عتاد اقتصادي وحوسبة سحابية ميسورة (Colab Pro أو RunPod).</p>
+  <ul>
+    <li><strong>البيانات والمحاكاة:</strong> ربط محاكاة عتادية (HITL) باستخدام متحكم طيران اقتصادي (<span class="code-inline">Pixhawk 2.4.8</span>) متصل بحاسوب، واعتراض حزم <span class="code-inline">MAVLink</span> وحقن أخطاء وهمية (FDI).</li>
+    <li><strong>التقنيات:</strong> تدريب بنظام <span class="code-inline">QLoRA / PEFT</span> لنماذج سلاسل زمنية (<span class="code-inline">TimesNet</span>)، ونشر وحدة حماية مدمجة (Edge-IDS) على شريحة كفية (<span class="code-inline">Raspberry Pi 5</span>) مع سلسلة تجزئة أمنية للقرارات.</li>
+  </ul>
+</div>
+
+<div class="path-box path-3">
+  <div class="path-header">
+    <span style="color: #b91c1c;">المسار 3: الأعلى صعوبة وتكلفة (Hardware-in-the-Loop / Swarms & High-End Edge)</span>
+    <span class="tag tag-red">عتاد متقدم + أسراب فيزيائية</span>
+  </div>
+  <p><strong>طبيعة العمل:</strong> مشاريع بحثية وتطبيقية متقدمة لأسراب طائرات واقعية ومسرعات حافة متطورة.</p>
+  <ul>
+    <li><strong>البيانات والمحاكاة:</strong> تجهيز سرب طائرات مسيّرة فيزيائي فعلي مع أجهزة راديو برمجي (<span class="code-inline">SDR: HackRF/USRP</span>) لمحاكاة هجمات تشويش كهرومغناطيسي حقيقية في الجو، وشبكات 5G C-V2X.</li>
+    <li><strong>التقنيات:</strong> استدلال مشفر بالكامل (FHE / MPC) لحماية السرب من التجسس، وتطوير وكلاء أذكياء تفاعليين (<span class="code-inline">Multi-Agent Swarm LLMs</span>) على شرائح <span class="code-inline">NVIDIA Jetson AGX Orin</span>.</li>
+  </ul>
+</div>
+
+<div class="footer">
+  إعداد إطار تحليل الأوراق البحثية v2 | مجلد: research-paper-analyzer-v2 | التاريخ: 2026-10-03
+</div>
+
+</body>
+</html>

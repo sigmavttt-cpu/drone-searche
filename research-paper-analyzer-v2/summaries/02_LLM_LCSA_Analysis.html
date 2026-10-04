@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>ملخص الورقة البحثية 02: LLM-LCSA</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background-color: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+  }
+  .header-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border-bottom: 4px solid #38bdf8;
+  }
+  .header-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    color: #f8fafc;
+  }
+  .header-subtitle {
+    font-size: 13.5px;
+    color: #93c5fd;
+    margin-bottom: 10px;
+    direction: ltr;
+    text-align: right;
+  }
+  .badge-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #e0f2fe;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    border-right: 4px solid #2563eb;
+    padding-right: 10px;
+    margin: 18px 0 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .metric-box {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  .metric-val {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1d4ed8;
+    margin-bottom: 2px;
+    direction: ltr;
+  }
+  .metric-lbl {
+    font-size: 11px;
+    color: #64748b;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  th, td {
+    padding: 7px 10px;
+    border: 1px solid #cbd5e1;
+    text-align: right;
+  }
+  th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+  }
+  ul {
+    margin: 6px 0;
+    padding-right: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  .path-box {
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+  }
+  .path-1 {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-right: 5px solid #22c55e;
+  }
+  .path-2 {
+    background: #fefce8;
+    border: 1px solid #fde047;
+    border-right: 5px solid #eab308;
+  }
+  .path-3 {
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-right: 5px solid #ef4444;
+  }
+  .path-header {
+    font-size: 13.5px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tag {
+    font-size: 10.5px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .tag-green { background: #dcfce7; color: #166534; }
+  .tag-yellow { background: #fef9c3; color: #854d0e; }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+  .code-inline {
+    background: #e2e8f0;
+    color: #0f172a;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 11.5px;
+    direction: ltr;
+    display: inline-block;
+  }
+  .formula-box {
+    background: #ffffff;
+    border: 1px dashed #94a3b8;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-family: Consolas, monospace;
+    direction: ltr;
+    text-align: center;
+    color: #0369a1;
+    font-size: 11.5px;
+  }
+  .footer {
+    text-align: center;
+    font-size: 10.5px;
+    color: #94a3b8;
+    margin-top: 25px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-card">
+  <div class="header-title">ملخص الورقة البحثية 02: LLM-LCSA</div>
+  <div class="header-subtitle">LLM for Collaborative Control and Decision Optimization in UAV Cluster Security</div>
+  <div class="badge-row">
+    <span class="badge">UAV Cluster Security</span>
+    <span class="badge">Mixture of Experts (MoEs)</span>
+    <span class="badge">KKT Resource Optimization</span>
+    <span class="badge">Cloud-Edge-End Hierarchical</span>
+    <span class="badge">MDPI Drones 2025</span>
+  </div>
+</div>
+
+<!-- 1. بطاقة التعريف والنتائج -->
+<div class="section-title">1. بطاقة تعريف الورقة والنتائج المحققة (Quick Scan)</div>
+<div class="card">
+  <p><strong>الفكرة الجوهرية:</strong> ابتكار معمارية دفاعية هرمية ثلاثية المستويات (Cloud-Edge-End) تُدعى <strong>LLM-LCSA</strong> لحماية أسراب الطائرات المسيّرة (15 إلى 60 طائرة)؛ تدمج نماذج لغوية خفيفة على متن الطائرة مع معمارية خليط الخبراء (MoEs) ومصفوفة ارتباط ديناميكية على الحافة، ونموذج تأسيسي عملاق في السحابة لاتخاذ قرارات أمنية فورية واستمثال مقيد للموارد عبر شروط KKT.</p>
+  <p><strong>المشكلة الأساسية:</strong> التصدي للتهديدات السيبرانية-الفيزيائية المتزامنة (انتحال GPS، التشويش الراديوي، البرمجيات الخبيثة، وتسميم الحساسات) في أسراب الطائرات المسيّرة دون تأخير زمني يهدد الطيران، وتجاوز قيود الموارد الشحيحة في الحوسبة والطاقة وسعة القنوات اللاسلكية.</p>
+  
+  <div class="metric-grid">
+    <div class="metric-box">
+      <div class="metric-val">+7.92%</div>
+      <div class="metric-lbl">تحسن دقة كشف التهديدات</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">-44.52%</div>
+      <div class="metric-lbl">انخفاض زمن استجابة النظام</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">+18.7%</div>
+      <div class="metric-lbl">تفوق كشف انتحال GPS على GNN</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-val">&lt; 15 ms</div>
+      <div class="metric-lbl">زمن استدلال درون المتن (7B)</div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. المعجم والمفاهيم العلمية -->
+<div class="section-title">2. المعجم والمفاهيم العلمية (Terminology & Acronyms)</div>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">المصطلح / الاختصار</th>
+        <th>التعريف التقني الدقيق ودوره في المنظومة</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>MoE (Mixture of Experts)</strong></td>
+        <td>معمارية خليط الخبراء؛ تجزئة الشبكة إلى 8 خبراء وظيفيين متخصصين يتم تنشيطهم انتقائياً عبر شبكة توجيه لتوفير موارد الحوسبة والطاقة.</td>
+      </tr>
+      <tr>
+        <td><strong>KKT Conditions</strong></td>
+        <td>شروط Karush-Kuhn-Tucker؛ معادلات استمثال رياضي غير خطي لحساب التوزيع الأمثل للموارد الثمانية المقيدة بصيغة مغلقة سريعة.</td>
+      </tr>
+      <tr>
+        <td><strong>Dynamic Matrix (<span class="code-inline">R<sub>ji</sub></span>)</strong></td>
+        <td>مصفوفة الارتباط الديناميكية بين التهديدات والخبراء؛ تُعدّل أوزان الخبراء وتتحدث ميدانياً عبر التعلم المستمر الموزع.</td>
+      </tr>
+      <tr>
+        <td><strong>Data Freshness Decay</strong></td>
+        <td>دالة تقادم طزاجة البيانات الأسية؛ تخفض وزن البيانات القديمة لضمان عدم اتخاذ قرارات حركية أو دفاعية بناءً على سياق منتهي الصلاحية.</td>
+      </tr>
+      <tr>
+        <td><strong>FANET</strong></td>
+        <td>شبكة الطيران اللاسلكية المخصصة؛ شبكة أسراب درونز ذاتية التشكيل والتنظيم تتبادل قراءات الحساسات وحزم MAVLink دون بنية تحتية.</td>
+      </tr>
+      <tr>
+        <td><strong>HITL Adaptive</strong></td>
+        <td>إشراك الإنسان في الحلقة بعتبة تكيفية؛ تحويل السيطرة لغرفة التحكم إذا هبط مؤشر ثقة الذكاء الاصطناعي عن الحد الآمن.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 3. التفكيك المنهجي والأدوات -->
+<div class="section-title">3. التفكيك المنهجي والأدوات (Methodology & Stack)</div>
+<div class="card">
+  <p><strong>المعمارية الهرمية ثلاثية المستويات:</strong></p>
+  <ul>
+    <li><strong>طبقة المتن (End Layer - 15 إلى 60 درون):</strong> نموذج مكمم بحجم <strong>7B</strong> معايير، زمن استدلال &lt; 15 ms، واستهلاك ذاكرة &lt; 2 GB لاستخراج معامل الشذوذ الموضعي اللحظي <span class="code-inline">&phi;(t)</span>.</li>
+    <li><strong>طبقة الحافة (Edge Layer):</strong> نموذج متوسط <strong>13B</strong> معايير (24 طبقة محول)، استدلال &lt; 45 ms، يدير شبكة MoEs المكونة من 8 خبراء ويحل مسألة استمثال الموارد المقيدة KKT.</li>
+    <li><strong>طبقة السحابة (Cloud Layer):</strong> نموذج عملاق <strong>70B</strong> معايير (80 طبقة محول، سياق 2048 رمزاً)، استدلال &lt; 180 ms لتحليل الأنماط التراكمية والتنبؤ الزمني طويل المدى وتحديث الأوزان.</li>
+  </ul>
+
+  <p><strong>الخبراء الثمانية المتخصصون في مصفوفة الحافة (The 8 MoE Experts):</strong></p>
+  <ul>
+    <li>خبير انتحال GPS، خبير استعادة الشبكة، خبير مكافحة التشويش، خبير تحديث النماذج، خبير التعزيز التعاوني، خبير استمثال الموارد، خبير تفادي التصادم وحفظ التشكيل، وخبير العزل الآمن للطوارئ.</li>
+  </ul>
+
+  <p><strong>الصيغ الرياضية الجوهرية لكشف الشذوذ واستمثال KKT:</strong></p>
+  <div class="formula-box">
+    v(t) = [&phi;(t), M(t), S(t), L(t), T(t), K(t)]<sup>T</sup>
+  </div>
+  <div class="formula-box">
+    w<sub>i</sub>(t) = exp(G&#771;<sub>i</sub>(v)) / &Sigma; exp(G&#771;<sub>k</sub>(v)), &nbsp; G&#771;<sub>i</sub>(v) = G<sub>i</sub>(v) + &beta; &Sigma; p<sub>j</sub><sup>threat</sup> &middot; R<sub>ji</sub>
+  </div>
+  <div class="formula-box">
+    x<sub>j</sub><sup>*</sup> = [ &Sigma; w<sub>i</sub> &alpha;<sub>ij</sub> d<sub>ij</sub> - 0.5 &Sigma; &mu;<sub>k</sub> r<sub>kj</sub> ] / [ &Sigma; w<sub>i</sub> &alpha;<sub>ij</sub> ]
+  </div>
+</div>
+
+<!-- 4. فرص الابتكار والقيود -->
+<div class="section-title">4. فرص الابتكار وبناء المشاريع (Innovation & Gap Analysis)</div>
+<div class="card">
+  <ul>
+    <li><strong>غياب التجارب الفيزيائية الحقيقية:</strong> اقتصرت نتائج الورقة على بيئة المحاكاة الحسابية دون التحقق الميداني على سرب حقيقي تحت عوامل الطقس والتداخل اللاسلكي.</li>
+    <li><strong>حساسية انقطاع رابط الحافة:</strong> في حالات التشويش الكهرومغناطيسي الكامل، ينقطع الاتصال مع خادم الحافة وتفقد الطائرة قدرة الوصول لشبكة الخبراء، مما يتطلب استراتيجية حماية ذاتية محلية على المتن.</li>
+    <li><strong>أمان مصفوفة التوجيه R:</strong> عدم اختبار مقاومة مصفوفة التوجيه ضد هجمات التسميم الميداني في سيناريوهات التعلم المستمر.</li>
+  </ul>
+</div>
+
+<!-- 5. مصفوفة مقترحات المشاريع والفجوات -->
+<div class="section-title">5. مصفوفة مقترحات المشاريع والفجوات (مرتبة تصاعدياً من الأسهل للأصعب)</div>
+
+<div class="path-box path-1">
+  <div class="path-header">
+    <span>🟢 المسار 1: الأسهل والأقل تكلفة (Software-Only / CPU Simulation)</span>
+    <span class="tag tag-green">تكلفة: $0 | أسبوعان - 3 أسابيع</span>
+  </div>
+  <ul>
+    <li><strong>البيئات والبيانات:</strong> توليد مسارات أسراب درونز وسلاسل زمنية عبر محاكاة PX4 SITL أو بيئات بايثون الرياضية، وتطبيق خوارزمية توجيه الخبراء (MoE) وحل KKT برمجياً باستخدام scipy.optimize.</li>
+    <li><strong>النماذج المستهدفة:</strong> نماذج خفيفة مكممة مفتوحة المصدر (LLaMA-3.2-1B أو Qwen-2.5-1.5B) تعمل محلياً على CPU عبر Ollama / llama.cpp.</li>
+  </ul>
+</div>
+
+<div class="path-box path-2">
+  <div class="path-header">
+    <span>🟡 المسار 2: متوسط الصعوبة والتكلفة (Hybrid Swarm Simulation / ROS 2)</span>
+    <span class="tag tag-yellow">تكلفة: $0 - $100 | شهر - شهرين</span>
+  </div>
+  <ul>
+    <li><strong>البيئات والبيانات:</strong> محاكاة سرب من 3 إلى 5 طائرات باستخدام ROS 2 Humble مع محاكي Gazebo، وحقن هجمات انتحال GPS وبرمجيات خبيثة عبر حزم MAVLink.</li>
+    <li><strong>النماذج والعتاد:</strong> تشغيل عقدة الحافة لمصفوفة MoEs على مسرع حافة اقتصادي (Raspberry Pi 5 أو GPU محلي)، مع ضبط دقيق فعّال (QLoRA) لتصنيف التهديدات.</li>
+  </ul>
+</div>
+
+<div class="path-box path-3">
+  <div class="path-header">
+    <span>🔴 المسار 3: الأعلى صعوبة وتكلفة (Hardware-in-the-Loop Swarm & SDR)</span>
+    <span class="tag tag-red">تكلفة: $1500+ | عام دراسي</span>
+  </div>
+  <ul>
+    <li><strong>البيئات والبيانات:</strong> سرب طائرات مسيّرة حقيقي مزود بمتحكمات Pixhawk 6C ومسرعات حافة مدمجة (NVIDIA Jetson Orin Nano)، مع حقن تشويش كهرومغناطيسي ميداني عبر راديو برمجيات HackRF One.</li>
+    <li><strong>النماذج والعتاد:</strong> تشغيل نماذج 7B مكممة على بطاقات Jetson باستخدام TensorRT-LLM، وتفعيل مفتاح المجموعة السري (GSK) وآلية التعزيز التعاوني بين الطائرات لإعادة التشكيل الحركي التلقائي.</li>
+  </ul>
+</div>
+
+<div class="footer">
+  تم التوليد والتصدير بواسطة منصة Research Paper Analyzer v2 &bull; جامعة وأبحاث أمن الطائرات المسيّرة &bull; 2026
+</div>
+
+</body>
+</html>
